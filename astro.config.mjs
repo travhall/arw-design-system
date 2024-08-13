@@ -12,6 +12,37 @@ export default defineConfig({
         dark: "./src/assets/arrow-logo-dark.svg",
         replacesTitle: true,
       },
+      // Set English as the default language for this site.
+      defaultLocale: "en",
+      locales: {
+        en: {
+          label: "English",
+        },
+        fr: {
+          label: "Français",
+          lang: "fr",
+        },
+        de: {
+          label: "Deutsch",
+          lang: "de",
+        },
+        it: {
+          label: "Italiano",
+          lang: "it",
+        },
+        kr: {
+          label: "한국어",
+          lang: "kr",
+        },
+        es: {
+          label: "Español",
+          lang: "es",
+        },
+        "zh-cn": {
+          label: "简体中文",
+          lang: "zh-CN",
+        },
+      },
       customCss: ["./src/css/tailwind.css"],
       sidebar: [
         {
@@ -31,6 +62,12 @@ export default defineConfig({
           },
         },
       ],
+      social: {
+        linkedin: "https://www.linkedin.com/company/arrow-electronics",
+        youtube: "https://www.youtube.com/user/ArrowFiveYearsOut",
+        facebook: "https://www.facebook.com/arrowfiveyearsout",
+        instagram: "https://www.instagram.com/arrowelectronics/",
+      },
     }),
     tailwind({
       applyBaseStyles: false,
