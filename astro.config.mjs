@@ -12,11 +12,11 @@ export default defineConfig({
         dark: "./src/assets/arrow-logo-dark.svg",
         replacesTitle: true,
       },
-      // Set English as the default language for this site.
       defaultLocale: "en",
       locales: {
         en: {
           label: "English",
+          lang: "en",
         },
         fr: {
           label: "Français",
@@ -46,12 +46,12 @@ export default defineConfig({
       customCss: ["./src/css/tailwind.css"],
       sidebar: [
         {
-          label: "Guides",
+          label: "Guidelines",
           items: [
             // Each item here is one entry in the navigation menu.
             {
               label: "Example Guide",
-              link: "/guides/example/",
+              link: "/guidelines/example/",
             },
           ],
         },
