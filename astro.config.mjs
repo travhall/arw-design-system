@@ -46,12 +46,38 @@ export default defineConfig({
       customCss: ["./src/css/tailwind.css"],
       sidebar: [
         {
+          label: "Getting Started",
+          link: "/introduction/",
+        },
+        {
           label: "Guidelines",
           items: [
             // Each item here is one entry in the navigation menu.
             {
-              label: "Example Guide",
-              link: "/guidelines/example/",
+              label: "Our Principles",
+              link: "/guidelines/principles/",
+            },
+            {
+              label: "Our Practice",
+              link: "/guidelines/practice/",
+            },
+          ],
+        },
+        {
+          label: "Foundations",
+          items: [
+            // Each item here is one entry in the navigation menu.
+            {
+              label: "Colors",
+              link: "/foundations/colors",
+            },
+            {
+              label: "Typography",
+              link: "/foundations/typography",
+            },
+            {
+              label: "Layout",
+              link: "/foundations/layout",
             },
           ],
         },
