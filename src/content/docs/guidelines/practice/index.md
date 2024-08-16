@@ -3,8 +3,9 @@ title: Our Practice
 description: How we make design decisions.
 ---
 
-Guidelines lead a user through a specific task they want to accomplish, often with a sequence of steps.
-Writing a good guide requires thinking about what your users are trying to do.
+To use this guide successfully, it is important to have a clear understanding of the fundamentals of our practice.
+
+Add Three Cards for UX, UI, & Usability Here
 
 ## Further reading
 

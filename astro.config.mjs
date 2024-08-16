@@ -47,7 +47,7 @@ export default defineConfig({
       sidebar: [
         {
           label: "Getting Started",
-          link: "/introduction/",
+          link: "/getting-started/",
         },
         {
           label: "Guidelines",
