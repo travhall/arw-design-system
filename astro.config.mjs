@@ -43,7 +43,7 @@ export default defineConfig({
           lang: "zh-CN",
         },
       },
-      customCss: ["./src/css/tailwind.css"],
+      customCss: ["./src/css/styles.css"],
       sidebar: [
         {
           label: "Getting Started",
@@ -52,7 +52,6 @@ export default defineConfig({
         {
           label: "Guidelines",
           items: [
-            // Each item here is one entry in the navigation menu.
             {
               label: "Our Principles",
               link: "/guidelines/principles/",
@@ -66,7 +65,6 @@ export default defineConfig({
         {
           label: "Foundations",
           items: [
-            // Each item here is one entry in the navigation menu.
             {
               label: "Colors",
               link: "/foundations/colors",
@@ -78,6 +76,14 @@ export default defineConfig({
             {
               label: "Layout",
               link: "/foundations/layout",
+            },
+            {
+              label: "Icons",
+              link: "/foundations/icons",
+            },
+            {
+              label: "Logo",
+              link: "/foundations/logo",
             },
           ],
         },
