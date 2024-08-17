@@ -1,0 +1,27 @@
+---
+interface Swatch {
+    name: string;
+    scope: string;
+    value: string;
+    description?: string;
+}
+
+const swatches: Swatch[] = [
+    {
+        name: "Pacific Blue",
+        scope: "Primary 100",
+        value: "#0069AA",
+    }
+];
+---
+
+<section class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
+    {swatches.map((swatch, index) => (
+    <article data-index={index} class="grid-item">
+        <div class="swatch-preview aspect-square"></div>
+        <h1 class="swatch-name"></h1>
+        <h2 class="swatch-scope"></h2>
+        <p class="swatch-desc"></p>
+    </article>
+    ))}
+</section>
