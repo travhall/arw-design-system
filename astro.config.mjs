@@ -1,6 +1,7 @@
 import { defineConfig } from "astro/config";
 import starlight from "@astrojs/starlight";
 import tailwind from "@astrojs/tailwind";
+import starlightImageZoom from "starlight-image-zoom";
 
 // https://astro.build/config
 export default defineConfig({
@@ -100,6 +101,7 @@ export default defineConfig({
         facebook: "https://www.facebook.com/arrowfiveyearsout",
         instagram: "https://www.instagram.com/arrowelectronics/",
       },
+      plugins: [starlightImageZoom()],
     }),
     tailwind({
       applyBaseStyles: false,

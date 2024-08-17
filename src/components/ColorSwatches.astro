@@ -1,27 +1,53 @@
 ---
 interface Swatch {
-    name: string;
-    scope: string;
-    value: string;
-    description?: string;
+  name: string;
+  scope: string;
+  value: string;
 }
 
 const swatches: Swatch[] = [
-    {
-        name: "Pacific Blue",
-        scope: "Primary 100",
-        value: "#0069AA",
-    }
+  {
+    name: "Pacific Blue",
+    scope: "Primary 100",
+    value: "#0069AA",
+  },
+  {
+    name: "Sky Blue",
+    scope: "Primary 200",
+    value: "#0084D5",
+  },
+  {
+    name: "Ocean Blue",
+    scope: "Primary 300",
+    value: "#004E7F",
+  },
 ];
 ---
 
-<section class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 xl:grid-cols-8">
-    {swatches.map((swatch, index) => (
-    <article data-index={index} class="grid-item">
-        <div class="swatch-preview aspect-square"></div>
-        <h1 class="swatch-name"></h1>
-        <h2 class="swatch-scope"></h2>
-        <p class="swatch-desc"></p>
-    </article>
-    ))}
+<section
+  class="grid max-[400px]:grid-cols-1 grid-cols-2 lg:grid-cols-4 gap-4 not-content"
+>
+  {
+    swatches.map((swatch, index) => (
+      <article data-index={index} class="grid-item border border-zinc-300 p-2">
+        <div
+          class="swatch-preview aspect-square"
+          style={{ backgroundColor: `${swatch.value}` }}
+        />
+        <p class="swatch-name">{swatch.name}</p>
+        <p class="swatch-scope">{swatch.scope}</p>
+      </article>
+    ))
+  }
 </section>
+
+<style>
+  /* .sl-markdown-content {
+    margin-top: 0;
+  } */
+
+  /* .grid-item,
+  .grid-item > * {
+    margin-top: 0 !important;
+  } */
+</style>

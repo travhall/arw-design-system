@@ -48,6 +48,11 @@
   --sl-color-black: #ffffff;
 }
 
+p {
+  max-width: 60ch;
+  text-wrap: pretty;
+}
+
 /* Button Overrides */
 
 .action {
@@ -56,16 +61,6 @@
   line-height: 1.1875;
   padding: 0.5rem 1rem;
 }
-/* .action.primary {
-  background: var(--sl-color-text-accent);
-  color: var(--sl-color-black);
-}
-.action.secondary {
-  border: 1px solid;
-}
-.action.minimal {
-  padding-inline: 0;
-} */
 
 @media (min-width: 50rem) {
   .action {
@@ -75,7 +70,6 @@
 }
 
 /* Adjust Hero Grid */
-
 @media (min-width: 50rem) {
   .hero {
     grid-template-columns: 6fr 2fr;
