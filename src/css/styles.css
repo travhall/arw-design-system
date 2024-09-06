@@ -49,21 +49,25 @@
 }
 
 p {
-  max-width: 60ch;
+  /* max-width: 60ch; */
   text-wrap: pretty;
 }
 
 /* Button Overrides */
 
-.action {
+.sl-link-button {
   border-radius: 2px;
   font-weight: 500;
   line-height: 1.1875;
   padding: 0.5rem 1rem;
+  &.secondary {
+    border-color: var(--sl-color-white);
+    border-width: 2px;
+  }
 }
 
 @media (min-width: 50rem) {
-  .action {
+  .sl-link-button {
     font-size: var(--sl-text-base);
     padding: 1rem 1.5rem;
   }
